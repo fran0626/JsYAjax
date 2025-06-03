@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Laboratorio JS y AJAX</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Laboratorio: JavaScript y AJAX</h1>
+
+  <section>
+    <h2>1. Palíndromo</h2>
+    <input type="text" id="palindromeInput" placeholder="Introduce una palabra o frase">
+    <button onclick="checkPalindrome()">Verificar</button>
+    <p id="palindromeResult"></p>
+  </section>
+
+  <section>
+    <h2>2. Comparar dos números</h2>
+    <input type="number" id="num1" placeholder="Primer número">
+    <input type="number" id="num2" placeholder="Segundo número">
+    <button onclick="compareNumbers()">Comparar</button>
+    <p id="compareResult"></p>
+  </section>
+
+  <section>
+    <h2>3. Vocales en una frase</h2>
+    <input type="text" id="vowelInput" placeholder="Introduce una frase">
+    <button onclick="findVowels()">Mostrar Vocales</button>
+    <p id="vowelResult"></p>
+  </section>
+
+  <section>
+    <h2>4. Contar vocales</h2>
+    <input type="text" id="countInput" placeholder="Introduce una frase">
+    <button onclick="countVowels()">Contar Vocales</button>
+    <p id="countResult"></p>
+  </section>
+
+  <section>
+    <h2>AJAX</h2>
+    <input type="text" id="urlInput">
+    <button onclick="loadContent()">Mostrar Contenidos</button>
+    <h3>Contenidos</h3>
+    <pre id="ajaxContent"></pre>
+    <h3>Estados de la petición</h3>
+    <p id="ajaxState"></p>
+    <h3>Cabeceras HTTP de la respuesta del servidor</h3>
+    <pre id="ajaxHeaders"></pre>
+    <h3>Código de estado</h3>
+    <p id="ajaxStatus"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
